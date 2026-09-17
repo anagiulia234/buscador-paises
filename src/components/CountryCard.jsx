@@ -11,7 +11,7 @@ export function CountryCard({ country, onToggleFavorite, isFavorite}) {
             <div className={styles['image-container']}>
                 <img src={flagUrl}/>
                 <button
-                   className={styles['favorite-bt']}
+                   className={styles['favorite-btn']}
                    onClick={(e) => {
                     e.preventDefault();
                     onToggleFavorite(country);

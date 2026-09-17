@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className= "container"> 
+      <div className={styles.container}> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pais/:code" element={<CountryDetails />} />

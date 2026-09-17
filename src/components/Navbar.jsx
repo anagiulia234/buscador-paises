@@ -5,13 +5,13 @@ export function Navbar() {
     const location = useLocation();
 
     return (
-        <nav  className="menu-nav">
+        <nav className={styles['menu-nav']}>
             <div className="logo"> 
                 <Link to="/" className={styles['titulo-principal']}>
                     GeoFlagger 🌍
                     </Link>
                </div>
-               <ul className="nav-links">
+               <ul className={styles['nav-links']}>
                 <li>
                       <Link to="/" style={{
                     color: location.pathname === '/' ? '#fff' : '#aaa',
@@ -24,9 +24,9 @@ export function Navbar() {
                 </li>
                 <li>
                  <Link to="/favoritos" style={{
-                    color: location.pathname === '/' ? '#fff' : '#aaa',
+                    color: location.pathname === '/favoritos' ? '#fff' : '#aaa',
                     textDecoration: 'none', 
-                    fontWeight: location.pathname === '/' ? 'bold' : 'normal',
+                    fontWeight: location.pathname === '/favoritos' ? 'bold' : 'normal',
                     transition: 'color 0.2s'
                 }}>
                     Meus Destinos
